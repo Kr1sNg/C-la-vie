@@ -1,2 +1,2 @@
-#learn C
+#learnC
 start to learn and practice the programming C
