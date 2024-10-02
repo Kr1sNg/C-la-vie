@@ -1,1 +1,2 @@
-start to learn machine language C
+#learn C
+start to learn and practice the programming C
