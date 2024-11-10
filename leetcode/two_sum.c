@@ -6,10 +6,11 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 12:27:34 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/10/03 13:08:08 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/10 09:46:28 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
-/* ************************************************************************** *//*
-Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+/* ************************************************************************** */
+
+/*
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 You can return the answer in any order.
 Example 1:
@@ -23,11 +24,12 @@ Example 3:
 Input: nums = [3,3], target = 6
 Output: [0,1]
 Constraints:
-    2 <= nums.length <= 104
-    -109 <= nums[i] <= 109
-    -109 <= target <= 109
-    Only one valid answer exists.
+	2 <= nums.length <= 104
+	-109 <= nums[i] <= 109
+	-109 <= target <= 109
+	Only one valid answer exists.
 Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?*/
+*/
 
 #include <stdlib.h>
 
