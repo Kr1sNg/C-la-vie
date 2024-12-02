@@ -9,7 +9,7 @@
 Can be any of the 12 Functions/Programs Below:
 <table><tr><td>
   
-1. [first_word](https://github.com/Kr1sNg/42piscine-C/blob/main/Exam-Rank-02/Level-01/first_word)
+1. [first_word](https://github.com/Kr1sNg/42piscine-C/blob/main/Exam-Rank-02/Level-01/first_word) :ballot_box_with_check:
 2. [fizzbuzz](https://github.com/Kr1sNg/42piscine-C/blob/main/Exam-Rank-02/Level-01/fizzbuzz)
 3. [ft_strcpy](https://github.com/Kr1sNg/42piscine-C/blob/main/Exam-Rank-02/Level-01/ft_strcpy)
 4. [ft_strlen](https://github.com/Kr1sNg/42piscine-C/blob/main/Exam-Rank-02/Level-01/ft_strlen)
