@@ -1,8 +1,8 @@
 ## Exam Details
 
-- This is very first exam as a student of Ecole 42.
-- This exam has 4 Levels, with a question picked random from each level below.
-- If you fail the exam, when you retake the exam again, you will restart at Level 1.
+- This is the very first exam as a student of Ecole 42.
+- This exam has 4 Levels, with a question picked randomly from each level below.
+- If you fail the exam, you will restart at Level 1 when you retake it.
 - There is <ins>**No Norminette**</ins> in this exam.
 
 ### :one: Level 1
@@ -10,11 +10,11 @@ Can be any of the 12 Functions/Programs Below:
 <table><tr><td>
   
 1. [first_word](https://github.com/Kr1sNg/42piscine-C/blob/main/Exam-Rank-02/Level-01/first_word) :ballot_box_with_check:
-2. [fizzbuzz](https://github.com/Kr1sNg/42piscine-C/blob/main/Exam-Rank-02/Level-01/fizzbuzz)
+2. [fizzbuzz](https://github.com/Kr1sNg/42piscine-C/blob/main/Exam-Rank-02/Level-01/fizzbuzz) :ballot_box_with_check:
 3. [ft_strcpy](https://github.com/Kr1sNg/42piscine-C/blob/main/Exam-Rank-02/Level-01/ft_strcpy)
 4. [ft_strlen](https://github.com/Kr1sNg/42piscine-C/blob/main/Exam-Rank-02/Level-01/ft_strlen)
 5. [ft_swap](https://github.com/Kr1sNg/42piscine-C/blob/main/Exam-Rank-02/Level-01/ft_swap)
-6. [putstr](https://github.com/Kr1sNg/42piscine-C/blob/main/Exam-Rank-02/Level-01/ft_putstr)
+6. [ft_putstr](https://github.com/Kr1sNg/42piscine-C/blob/main/Exam-Rank-02/Level-01/ft_putstr)
 7. [repeat_alpha](https://github.com/Kr1sNg/42piscine-C/blob/main/Exam-Rank-02/Level-01/repeat_alpha)
 8. [rev_print](https://github.com/Kr1sNg/42piscine-C/blob/main/Exam-Rank-02/Level-01/rev_print)
 9. [rot_13](https://github.com/Kr1sNg/42piscine-C/blob/main/Exam-Rank-02/Level-01/rot_13)
