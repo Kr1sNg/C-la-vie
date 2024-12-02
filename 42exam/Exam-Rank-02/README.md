@@ -11,10 +11,10 @@ Can be any of the 12 Functions/Programs Below:
   
 1. [first_word](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/first_word) :ballot_box_with_check:
 2. [fizzbuzz](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/fizzbuzz) :ballot_box_with_check:
-3. [ft_strcpy](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/ft_strcpy)
-4. [ft_strlen](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/ft_strlen)
+3. [ft_strcpy](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/ft_strcpy) :ballot_box_with_check:
+4. [ft_strlen](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/ft_strlen) :ballot_box_with_check:
 5. [ft_swap](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/ft_swap)
-6. [ft_putstr](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/ft_putstr)
+6. [ft_putstr](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/ft_putstr) :ballot_box_with_check:
 7. [repeat_alpha](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/repeat_alpha)
 8. [rev_print](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/rev_print)
 9. [rot_13](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/rot_13)
