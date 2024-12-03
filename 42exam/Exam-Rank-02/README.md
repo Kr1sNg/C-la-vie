@@ -83,7 +83,7 @@ Can be any of the 10 Functions/Programs Below:
 7. [rev_wstr](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-04/rev_wstr)
 8. [rostring](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-04/rostring)
 9. [sort_int_tab](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-04/sort_int_tab) :ballot_box_with_check:
-10. [sort_list](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-04/sort_list)
+10. [sort_list](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-04/sort_list) :ballot_box_with_check:
 </td></tr></table>
 
 <br>
