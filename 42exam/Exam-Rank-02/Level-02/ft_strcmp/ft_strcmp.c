@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 11:21:16 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/12/03 11:43:49 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/03 20:11:46 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int	ft_strcmp(char *s1, char *s2)
 	return (((unsigned char)s1[i]) - ((unsigned char)s2[i]));
 }
 
+/*
 #include <stdio.h>
 #include <string.h>
 int	main(void)
@@ -27,3 +28,4 @@ int	main(void)
 	printf("ft_strcmp: %i\n", ft_strcmp(s1, s2));
 	printf("strcmp: %i\n", strcmp(s1, s2));
 }
+*/

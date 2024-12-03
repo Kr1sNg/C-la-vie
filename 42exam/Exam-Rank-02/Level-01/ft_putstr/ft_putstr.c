@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 00:09:01 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/12/03 00:13:20 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/03 20:10:44 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,9 @@ void	ft_putstr(char *str)
 	}
 }
 
+/*
 int main(void)
 {
 	ft_putstr("Hello world!\n");
 }
+*/
