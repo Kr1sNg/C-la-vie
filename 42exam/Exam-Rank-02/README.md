@@ -16,11 +16,11 @@ Can be any of the 12 Functions/Programs Below:
 5. [ft_swap](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/ft_swap) :ballot_box_with_check:
 6. [ft_putstr](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/ft_putstr) :ballot_box_with_check:
 7. [repeat_alpha](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/repeat_alpha) :ballot_box_with_check:
-8. [rev_print](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/rev_print)
+8. [rev_print](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/rev_print) :ballot_box_with_check:
 9. [rot_13](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/rot_13)
 10. [rotone](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/rotone)
-11. [search_and_replace](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/search_and_replace)
-12. [ulstr](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/ulstr)
+11. [search_and_replace](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/search_and_replace) :ballot_box_with_check:
+12. [ulstr](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-01/ulstr) :ballot_box_with_check:
 </td></tr></table>
 
 ### :two: Level 2
