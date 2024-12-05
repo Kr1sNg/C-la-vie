@@ -32,7 +32,7 @@ Can be any of the 20 Functions/Programs Below:
 3. [do_op](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/do_op/do_op.c) :ballot_box_with_check:
 4. [ft_atoi](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/ft_atoi/ft_atoi.c) :ballot_box_with_check:
 5. [ft_strcmp](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/ft_strcmp/ft_strcmp.c) :ballot_box_with_check:
-6. [ft_strcspn](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/ft_strcspn/ft_strcspn.c)
+6. [ft_strcspn](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/ft_strcspn/ft_strcspn.c) :ballot_box_with_check:
 7. [ft_strdup](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/ft_strdup/ft_strdup.c)
 8. [ft_strpbrk](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/ft_strpbrk/ft_strpbrk.c) :ballot_box_with_check:
 9. [ft_strrev](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/ft_strrev/ft_strrev.c) :ballot_box_with_check:
@@ -53,18 +53,18 @@ Can be any of the 20 Functions/Programs Below:
 Can be any of the 15 Functions/Programs Below:
 <table><tr><td>
   
-1. [add_prime_sum](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/add_prime_sum/)
-2. [epur_str](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/epur_str/)
-3. [expand_str](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/expand_str)
-4. [ft_atoi_base](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/ft_atoi_base)
+1. [add_prime_sum](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/add_prime_sum/) :ballot_box_with_check:
+2. [epur_str](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/epur_str/) :ballot_box_with_check:
+3. [expand_str](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/expand_str) :ballot_box_with_check:
+4. [ft_atoi_base](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/ft_atoi_base) :ballot_box_with_check:
 5. [ft_list_size](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/ft_list_size) :ballot_box_with_check:
 6. [ft_range](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/ft_range)
-7. [ft_rrange](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/ft_rrange)
+7. [ft_rrange](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/ft_rrange) :ballot_box_with_check:
 8. [hidenp](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/hidenp)
 9. [lcm](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/lcm)
-10. [paramsum](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/paramsum)
+10. [paramsum](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/paramsum) :ballot_box_with_check:
 11. [pgcd](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/pgcd)
-12. [print_hex](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/print_hex)
+12. [print_hex](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/print_hex) :ballot_box_with_check:
 13. [rstr_capitalizer](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/rstr_capitalizer)
 14. [str_capitalizer](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/str_capitalizer)
 15. [tab_mult](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/tab_mult)
