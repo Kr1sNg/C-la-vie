@@ -6,7 +6,7 @@
 /*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 16:13:43 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/12/04 16:28:25 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/05 20:10:10 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,11 @@ size_t	ft_strcspn(const char *s, const char *reject)
 	return (i);
 }
 
+/*
 int	main(void)
 {
-//	char *rj = "The strspn() function calculates the length (in bytes) of the initial segment of s which consists entirely of bytes in accept.";
-	char *s = "";
-	char *rj = "";	
+	char *s = "The strspn() function calculates the length (in bytes) of the initial segment of s which consists entirely of bytes in accept.";
+	char *rj = "abc";
 
 	int	a = ft_strcspn(s, rj);
 	printf("ft_strcspn: %i\n", a);
@@ -47,4 +47,5 @@ int	main(void)
 	int	b = strcspn(s, rj);
 	printf("strcspn: %i\n", b);
 
-}	
+}
+*/	
