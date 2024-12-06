@@ -37,7 +37,7 @@ Can be any of the 20 Functions/Programs Below:
 8. [ft_strpbrk](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/ft_strpbrk/ft_strpbrk.c) :ballot_box_with_check:
 9. [ft_strrev](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/ft_strrev/ft_strrev.c) :ballot_box_with_check:
 10. [ft_strspn](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/ft_strspn/ft_strspn.c)
-11. [inter](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/inter/inter.c)
+11. [inter](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/inter/inter.c) :ballot_box_with_check:
 12. [is_power_of_2](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/is_power_of_2/is_power_of_2.c) :ballot_box_with_check:
 13. [last_word](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/last_word/last_word.c) :ballot_box_with_check:
 14. [max](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/max/max.c)
@@ -45,8 +45,8 @@ Can be any of the 20 Functions/Programs Below:
 16. [reverse_bits](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/reverse_bits/reverse_bits.c) :ballot_box_with_check:
 17. [snake_to_camel](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/snake_to_camel/snake_to_camel.c)
 18. [swap_bits](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/swap_bits/swap_bits.c) :ballot_box_with_check:
-19. [union](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/union/union.c)
-20. [wdmatch](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/wdmatch/)
+19. [union](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/union/union.c) :ballot_box_with_check:
+20. [wdmatch](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-02/wdmatch/) :ballot_box_with_check:
 </td></tr></table>
 
 ### :three: Level 3
