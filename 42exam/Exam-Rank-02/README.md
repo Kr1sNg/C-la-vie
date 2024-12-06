@@ -60,14 +60,14 @@ Can be any of the 15 Functions/Programs Below:
 5. [ft_list_size](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/ft_list_size) :ballot_box_with_check:
 6. [ft_range](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/ft_range)
 7. [ft_rrange](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/ft_rrange) :ballot_box_with_check:
-8. [hidenp](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/hidenp)
-9. [lcm](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/lcm)
+8. [hidenp](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/hidenp) :ballot_box_with_check:
+9. [lcm](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/lcm) :ballot_box_with_check:
 10. [paramsum](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/paramsum) :ballot_box_with_check:
-11. [pgcd](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/pgcd)
+11. [pgcd](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/pgcd) :ballot_box_with_check:
 12. [print_hex](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/print_hex) :ballot_box_with_check:
 13. [rstr_capitalizer](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/rstr_capitalizer)
 14. [str_capitalizer](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/str_capitalizer)
-15. [tab_mult](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/tab_mult)
+15. [tab_mult](https://github.com/Kr1sNg/C-la-vie/blob/main/42exam/Exam-Rank-02/Level-03/tab_mult) :ballot_box_with_check:
 </td></tr></table>
 
 ### :four: Level 4
