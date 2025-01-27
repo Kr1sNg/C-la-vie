@@ -1,13 +1,13 @@
-# EXAM RANK 03
+# 🦆 EXAM RANK 03
 
-## Exam Subjects
+## 🏆 Exam Subjects
 
-Here are the two exercises we may be asked to do:
--	`ft_printf`
--	`get_next_line`
+Here are the two exercises may be asked to do:
+-	[`ft_printf`](https://github.com/Kr1sNg/C-la-vie/tree/main/42exam/Exam-Rank-03/ft_printf)
+-	[`get_next_line`](https://github.com/Kr1sNg/C-la-vie/tree/main/42exam/Exam-Rank-03/get_next_line)
 
 
-## Exam Setup
+## 🗜️ Exam Setup
 
 ### Login Details
 
@@ -63,7 +63,7 @@ When you are ready to sumbit your function/program, go into Rendu and push the f
 <br>
 
 ---
-## Exam IDE
+## 🔧 Exam IDE
 
 > [!NOTE]
 You should be able to use both VSCode and Vim in the exam.
@@ -73,7 +73,5 @@ You should be able to use both VSCode and Vim in the exam.
 <br>
 
 ---
-## Exam Practice Tool
+## 💯 Exam Practice Tool
 [42_EXAM](https://github.com/JCluzet/42_EXAM)
-
-<br>
