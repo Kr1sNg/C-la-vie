@@ -103,7 +103,7 @@ Type examshell in terminal
 ```
 :three: Your 42 Intra Account:
 ```
-login -> your 42 intra username (eg. prossi)
+login -> your 42 intra username
 pasword -> your password
 ```
 :four: Your 42 Intra Photo:
