@@ -96,11 +96,27 @@ char	*ft_read_line(int fd, char *buffer)
 			free(temp);
 			return (NULL);
 		}
-		buffer
+		buffer = ft_join_and_free(buffer, temp);
+		if (ft_strchr(temp, '\n') != NULL)
+			break;
+	}
+	free(temp);
+	return (buffer);
 }
 
 
 char	*ft_line(char *buffer);
+{
+	char	*line;
+	int		i;
+
+	if (buffer == NULL || buffer[0] == '\0')
+		return (NULL);
+	i = 0;
+	
+}
+
+
 char	*ft_remain(char buffer);
 
 
