@@ -1,121 +1,195 @@
-#include <unistd.h> //read, write
-#include <stdlib.h> // malloc
+/*
+char    *ft_read_file(int fd, char *buffer); => return new_buffer
+char    *ft_line(char *buffer); => return line
+char    *ft_remain(char *buffer);
+char    *ft_lineappend(char *buffer, char *temp); use to make remain
+*/
 
-#ifndef BUFFER_SIZE 42
+#include <stdlib.h>
+#include <unistd.h>
+
+#ifndef BUFFER_SIZE
 # define BUFFER_SIZE 42
 #endif
 
-char    *ft_read_file(int fd, char *remain);
-char    *ft_line(char *buffer);
-char    *ft_remain(char *buffer);
-char	*ft_lineappend(char *remain, char *buffer);
-
-
-char	*ft_read_file(int fd, char *remain)
+int	ft_strlen(char *s)
 {
-	char 	*buffer;
+	int i = 0;
+
+	while (s[i])
+		i++;
+	return (i);
+}
+
+
+void	*ft_calloc(size_t mem, size_t size)
+{
+	size_t i = 0;
+	char *loc;
+
+	loc = malloc(mem * size);
+	if (!loc)
+		return (NULL);
+	while (i < mem * size)
+	{
+		loc[i] = 0;
+		i++;
+	}
+	return (loc);
+}
+
+
+char	*ft_strchr(char *s, char c)
+{
+	int i = 0;
+
+	while (s[i])
+	{
+		if (s[i] == c)
+			return (&s[i]);
+		i++;
+	}
+	return (NULL);
+}
+
+char	*ft_strjoin(char *s1, char *s2)
+{
+	int i;
+	int j;
+	char *new;
+
+	new = ft_calloc((ft_strlen(s1) + ft_strlen(s2) + 1), 1);
+	if (!new)
+		return (NULL);
+	i = -1;
+	while (s1[++i])
+		new[i] = s1[i];
+	j = -1;
+	while (s2[++j])
+		new[i++] = s2[j];
+	return (new);
+}
+
+char    *ft_lineappend(char *buffer, char *temp)
+{
+	char *new_buffer;
+
+	new_buffer = ft_strjoin(buffer, temp);
+	free(buffer);
+	return (new_buffer);
+}
+
+char	*ft_read_file(int fd, char *buffer)
+{
+	char 	*temp;
 	int		byte_read;
 
-	if (!remain)
-	{
-		remain = ft_calloc(1, sizeof(char));
-		if (!remain)
-			return (NULL);
-	}
-	buffer = ft_calloc(BUFFER_SIZE + 1, sizeof(char)); //TODO
+	if (buffer == NULL)
+		buffer = ft_calloc(1, 1);
+	temp = ft_calloc(BUFFER_SIZE + 1, 1);
 	byte_read = 1;
+	//read until the eof or the '\n'
 	while (byte_read > 0)
 	{
-		byte_read = read(fd, buffer, BUFFER_SIZE);
+		byte_read = read(fd, temp, BUFFER_SIZE);
 		if (byte_read < 0)
 		{
-			free(buffer);
+			free(temp);
 			return (NULL);
 		}
-		buffer[byte_read] = '\0';
-		remain = ft_lineappend(remain, buffer); //TODO
-		if (!ft_strchr(buffer, '\n'))
+		//temp[byte_read] = '\0'; // k can vi da calloc
+		buffer = ft_lineappend(buffer, temp); //new buffer is created
+		if (ft_strchr(temp, '\n') != NULL)
 			break;
 	}
-	free(buffer);
-	return (remain);
+	free(temp);
+	return (buffer);
 }
 
 char	*ft_line(char *buffer)
 {
-	char	*line;
+	char 	*line;
 	int		i;
-
-	if (!buffer || buffer[0] == '\0')
+	
+	if (buffer == NULL || buffer[0] == '\0')
 		return (NULL);
 	i = 0;
 	while (buffer[i] != '\0' && buffer[i] != '\n')
 		i++;
-	// malloc to eol (1 for \n, 1 for \0 !?)
-	line = ft_calloc(i + 2, sizeof(char));
-	if (line == NULL)
+	line = ft_calloc(i + 2, 1);
+	if (!line)
 		return (NULL);
 	i = 0;
-	while (buffer[i] != '\0' & buffer[i] != '\n')
+	while (buffer[i] != '\0' && buffer[i] != '\n')
 	{
 		line[i] = buffer[i];
 		i++;
 	}
 	if (buffer[i] != '\0' && buffer[i] == '\n')
-		line[i] = '\n';
+		line[i] = '\n'; //line[i + 1] is already calloced by '\0' to termine the line!
 	return (line);
 }
 
 char	*ft_remain(char *buffer)
 {
-	int		i;
-	int		j;
-	char	*remain;
+	int	i;
+	int j;
+	char *remain;
 
 	i = 0;
-	while (buffer[i] != '\0' && buffer[i] != '\n')
+	while (buffer[i] && buffer[i] != '\n')
 		i++;
-	if (buffer[i] == '\0')
+	if (buffer[i] == '\0') //it means this is eof and the line is already read and taken by ft_line 
 	{
 		free(buffer);
 		return (NULL);
 	}
-	remain = ft_calloc((ft_strlen(buffer) - i + 1), sizeof(char));
+	//if not, it means we still have next line to read
+	remain = ft_calloc((ft_strlen(buffer) - i + 1), 1);
 	if (!remain)
 		return (NULL);
-	i += (buffer[i] == '\n');
+	i++; // i += (buffer[i] == '\n'), but after check '\0', buffer[i] is definetly == '\n'
 	j = 0;
-	while (buffer[i] != '\0')
+	while (buffer[i])
 		remain[j++] = buffer[i++];
-	remain[j] = '\0';
+	//remain[j] = '\0'; //donot need thanks to calloc
 	free(buffer);
 	return (remain);
 }
-
-char *ft_lineappend(char *remain, char *buffer)
-{
-	char *new_remain;
-
-	new_remain = ft_strjoin(remain, buffer);
-	free(remain);
-	return (new_remain);
-}
+	
 
 char	*get_next_line(int fd)
 {
-	static char	*buffer;
+	static char *buffer;
 	char		*line;
 
-	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0) //check if fd and BZ is valid
+	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0)
 		return (NULL);
-//call read_file to fill up the buffer with data from file
-	buffer = ft_read_file(fd, buffer); //TODO
+	buffer = ft_read_file(fd, buffer); //add the old buffer into and continue (or start) to read until get \n or eof
 	if (!buffer)
 		return (NULL);
-//extract the next line (if any) from the buffer with ft_line
-	line = ft_line(buffer); //TODO
-// update buffer by removing the line we just read, and remain is the rest(after\n - if any)
-	buffer = ft_remain(buffer); //TODO
+	line = ft_line(buffer); // return line
+	buffer = ft_remain(buffer); // the rest of buffer (after removing the whole line), which will be arg of read_fine in next call of gnl. 
 	return (line);
 }
 
+
+#include <stdio.h>
+#include <fcntl.h>
+
+int main(void)
+{
+	int i = 1;
+	int	fd;
+	char *line;
+
+	fd = open("README.md", O_RDONLY);
+	while ((line = get_next_line(fd)) != NULL)
+	{
+		printf("line[%i]: %s", i, line);
+		free(line);
+		i++;
+	}
+	close(fd);
+	return (0);
+}
