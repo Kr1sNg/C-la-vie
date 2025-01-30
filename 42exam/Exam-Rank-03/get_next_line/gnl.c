@@ -70,6 +70,7 @@ char	*ft_strjoin(char *s1, char *s2)
 	return (new);
 }
 
+//append buffer and temp
 char    *ft_lineappend(char *buffer, char *temp)
 {
 	char *new_buffer;
