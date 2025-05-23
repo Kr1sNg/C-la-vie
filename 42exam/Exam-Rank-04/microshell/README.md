@@ -31,3 +31,6 @@ Don't forget to pass the environment variable to execve
 Hints:
 Do not leak file descriptors!
 ```
+------------------------------------------------------------------------------------------
+Understand the requirement:
+- 
