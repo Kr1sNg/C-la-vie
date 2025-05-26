@@ -32,5 +32,14 @@ Hints:
 Do not leak file descriptors!
 ```
 ------------------------------------------------------------------------------------------
-Understand the requirement:
-- 
+### Understand the requirement:
+
+Write a C program `microshell` that mimics a tiny shell. It will:
+- Parse and execute commands given as command-line arguments (with full path, no PATH searching).
+- Support command separators `;` and pipelines `|`.
+- Handle the built-in `cd` command only with a path as argument.
+- Manage processes and file descriptions safely and correctly by supporting as many as pipelines.
+- Handle error:
+	- `error: fatal\n` on system call failures.
+	- `error: cannot execute <cmd>\n` if `execve` fails.
+	- error with `cd`.

@@ -27,8 +27,8 @@ void set_pipe(int has_pipe, int *fd, int end)
 int	exec(char **argv, int i, char **envp)
 {
 	int has_pipe, fd[2], pid, status;
-	has_pipe = argv[i] && !strcmp(argv[i], "|");
 
+	has_pipe = argv[i] && !strcmp(argv[i], "|");
 	if (!has_pipe && !strcmp(*argv, "cd"))
 		return cd(argv, i);
 	if (has_pipe && pipe(fd) == -1)
