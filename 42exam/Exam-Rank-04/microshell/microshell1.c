@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 11:25:27 by tat-nguy          #+#    #+#             */
-/*   Updated: 2025/05/26 15:41:37 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2025/05/27 11:29:33 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,7 @@ int	main(int ac, char **av, char **env)
 		while (*av && *(av + 1))
 		{
 			av++; // av = &av[i + 1] // move the pointer of *av
+			i = 0;
 			while (av[i] && strcmp(av[i], "|") != 0 && strcmp(av[i], ";") != 0)
 				i++;
 			if (strcmp(av[0], "cd") == 0) //because the pointer's moved already
@@ -96,9 +97,16 @@ int	main(int ac, char **av, char **env)
 - /bin/echo hello world "|" /usr/bin/tr a-z A-Z
 - /bin/echo "one two three" "|" /usr/bin/tr ' ' '\n' "|" /usr/bin/grep two
 - /bin/echo "first line" ";" /bin/echo "a b c" "|" /usr/bin/tr a-z A-Z
+- /bin/echo "first line" ";" /bin/echo a b c ";" /bin/echo this is new line "|" /usr/bin/tr a-z A-Z
+- /bin/echo "first line" ";" /bin/echo a b c ";" /bin/echo "this is new line" "|" /usr/bin/tr a-z A-Z 
 - cd .. ";" /bin/pwd
 - cd
 - cd /invalid/path
 - /not/a/real/command
+- /bin/echo first line ";" /bin/echo a b c ";" /bin/echo this is new line "|" /usr/bin/tr a-z A-Z ";" cd .. "|" /bin/pwd
+	first line
+	a b c
+	THIS IS NEW LINE
+	/home/tat-nguy/42perso/C-la-vie/42exam/Exam-Rank-04
 
 */

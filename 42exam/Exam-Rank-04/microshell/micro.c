@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 21:35:36 by tat-nguy          #+#    #+#             */
-/*   Updated: 2025/05/26 22:10:50 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2025/05/27 10:22:57 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,11 @@ int	ft_execute(char **av, char **env, int i)
 	int		status;
 	int 	fd[2];
 	int 	is_pipe = (av[i] && (strcmp(av[i], "|") == 0));
-	pid_t 	pid = fork();
+	
 
-	if ((is_pipe && pipe(fd) == -1) || (pid == -1))
+	if ((is_pipe && pipe(fd) == -1))// || (pid == -1))
 		return (errm("error: fatal\n"));
+	pid_t 	pid = fork();
 	if (pid == 0) // in child
 	{
 		av[i] = NULL; //erase "|"
