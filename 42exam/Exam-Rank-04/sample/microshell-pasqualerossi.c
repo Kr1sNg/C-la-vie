@@ -49,12 +49,14 @@ int main(int argc, char **argv, char **envp)
 	{
 		argv++;
 		while (argv[i] && strcmp(argv[i], "|") && strcmp(argv[i], ";"))
-			i++;		
+			i++;
+        printf("value of i1 = %i\n", i);
 		if (!strcmp(*argv, "cd"))
 			status = cd(argv, i);
 		else if (i)
 			status = exec(argv, envp, i);
 		argv += i;
+        printf("value of i2 = %i\n", i);
 	}
 	return (status);
 }
