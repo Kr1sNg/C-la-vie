@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   microshell.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/26 19:19:23 by tat-nguy          #+#    #+#             */
-/*   Updated: 2025/05/27 10:37:59 by tat-nguy         ###   ########.fr       */
+/*   Created: 2025/05/28 09:29:05 by tat-nguy          #+#    #+#             */
+/*   Updated: 2025/05/28 09:29:28 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,59 +14,51 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-int	err_mes(char *mes)
+int	errm(char *msg)
 {
-	int	i = 0;
-	while (mes[i])
-		write(2, &mes[i++], 1);
+	while (*msg)
+		write(2, msg++, 1);
 	return (1);
 }
 
-int	ft_cd(char **av, int i)
+int	ft_cd(char *path, int i)
 {
 	if (i != 2)
-		return (err_mes("error: cd: bad arguments\n"));
-	else if (chdir (av[i]) == -1) // because cd is av[0]
-		return (err_mes("error: cd: cannot change directory to "),
-				err_mes(av[i]),
-				err_mes("\n"));
+		return (errm("error: cd: bad arguments\n"));
+	else if (chdir(path) == -1)
+		return (errm("error: cd: cannot change directory to "), errm(path), errm("\n"));
 	return (0);
 }
 
-int ft_execute(char **av, char **env, int i)
+int	ft_execute(char **av, char **env, int i)
 {
-	int	fd[2], pid, status, is_pipe;
-	
-	is_pipe = (av[i] && strcmp(av[i], "|") == 0);
+	int	is_pipe, fd[2], pid, status;
 
-	// if it's the pipeline, but can't create pipe:
+	is_pipe = av[i] && (strcmp(av[i], "|") == 0);
 	if (is_pipe && pipe(fd) == -1)
-		return (err_mes("error: fatal\n"));
+		return (errm("error: fatal\n"));
 	
-	pid = fork(); // phai fork sau pipe!!
+	pid = fork();
 	if (pid == -1)
-		return (err_mes("error: fatal\n"));
+		return (errm("error: fatal\n"));
 	if (pid == 0)
 	{
-		av[i] = NULL; // delete "|"
+		av[i] = NULL;
 		if (is_pipe && (dup2(fd[1], 1) == -1 || close(fd[0]) == -1 || close(fd[1]) == -1))
-			return (err_mes("error: fatal\n"));
-		execve(av[0], av, env); // (path, argv, env)
-		return (err_mes("error: cannot execute "), 
-				err_mes(av[0]),
-				err_mes("\n"));
+			return (errm("error: fatal\n"));
+		execve(av[0], av, env);
+		return (errm("error: cannot execute "), errm(av[0]), errm("\n"));
 	}
-
 	waitpid(pid, &status, 0);
-	if (is_pipe && (dup2(fd[0], 0) == -1 || close(fd[0]) == -1 || close(fd[1]) == -1))
-		return (err_mes("error: fatal\n"));
+	if (is_pipe && (dup2(fd[0], 0) == -1 || close(fd[1]) == -1 || close(fd[0]) == -1))
+		return (errm("error: fatal\n"));
 	return (WIFEXITED(status) && WEXITSTATUS(status));
 }
 
-#include <stdio.h>
+
 int	main(int ac, char **av, char **env)
 {
-	int	i = 0;
+	int i = 0;
 	int status = 0;
 
 	if (ac > 1)
@@ -75,12 +67,10 @@ int	main(int ac, char **av, char **env)
 		{
 			av++;
 			i = 0;
-			printf ("	value of i1: %i\n", i);
-			while (av[i] && strcmp(av[i], "|") && strcmp(av[i], ";"))
+			while (av[i] && strcmp(av[i], "|") != 0 && strcmp(av[i], ";") != 0)
 				i++;
-			printf ("	value of i2: %i\n", i);
-			if (strcmp(*av, "cd") == 0)
-				status = ft_cd(av, i);
+			if (strcmp(av[0], "cd") == 0)
+				status = ft_cd(av[1], i);
 			else if (i)
 				status = ft_execute(av, env, i);
 			av += i;
@@ -88,7 +78,4 @@ int	main(int ac, char **av, char **env)
 	}
 	return (status);
 }
-
-
-
 
